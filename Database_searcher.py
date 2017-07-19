@@ -41,9 +41,10 @@ lownames = [element.lower() for element in upnames]
 simulated_database = {'Banana': 'foodvalues', 'apple' : 'foodvalues', 'pizza' : 'foodValues'}
 
 #test_url = 'http://lebensmittel-warenkunde.de/assets/images/bananen.jpg'
-#test_url = 'http://images.eatsmarter.de/sites/default/files/styles/576x432/public/images/cholesterinsenker-341x256.jpg'
+test_url = 'http://images.eatsmarter.de/sites/default/files/styles/576x432/public/images/cholesterinsenker-341x256.jpg'
 #test_url = "http://www.cicis.com/media/1243/pizza_adven_zestypepperoni.png"
-test_url = "https://www.quia.com/files/quia/users/carladefaveri/Pausenbrot/Birne"
+#test_url = "https://www.quia.com/files/quia/users/carladefaveri/Pausenbrot/Birne"
+#test_url = "https://www.kochschule.de/sites/default/files/images/kochwissen/457/grapefruit.jpg"
 
 
 visual_recognition = VisualRecognitionV3('2016-05-20', api_key='156f02f7a2afd0e4c1c50197db1f66a6e1fd6229')
@@ -56,10 +57,10 @@ score_results = url_result["images"][0]["classifiers"][0]["classes"]
 sorted_score_results = sorted(score_results, key = itemgetter('score'), reverse=True)
 
 #print("the result")
-#print(json.dumps(sorted_score_results, indent = 4))
+print(json.dumps(sorted_score_results, indent = 4))
 
 #print("test of the result")
-#print(json.dumps(sorted_score_results[0], indent = 4))
+print(json.dumps(sorted_score_results[0], indent = 4))
 
 # prints foodname
 #print(sorted_score_results[0]['class'])
@@ -78,6 +79,7 @@ if myVal is None:
     print("type of myVal is None")
 else:
     search = myVal['class']
+    print(search)
 
 
 
@@ -86,7 +88,7 @@ def searcher(tab, x):
     for i in tab:
         h = 3
         if i[1].lower() == x.lower():
-            print("ID:", int(i[0]), "\n" "Name:", i[1], "\n" "Category:", i[2])
+            print("ID:", int(i[0]), "\n" "Name:", i[1], "\n" "Category:", i[2], "\n" "\n" "Nutrition facts per 100g:", "\n" "Kcal:", i[3], "\n" "Protein:", i[4], "\n" "Fat:", i[5], "\n" "Carbohydrate:", i[5],)
             break
             
 
