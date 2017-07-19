@@ -79,18 +79,7 @@ if myVal is None:
 else:
     search = myVal['class']
 
-          
-"""
-names = [{'name':'Tom', 'age': 10}, {'name': 'Mark', 'age': 5}, {'name': 'Pam', 'age': 7}]
-resultlist = [d    for d in names     if d.get('name', '') == 'Pam']
-first_result = resultlist[0]
-"""
 
-
-
-
-
-#print("[" + table[2][1] + ": " + table[3][1])
 
 def searcher(tab, x):
     
