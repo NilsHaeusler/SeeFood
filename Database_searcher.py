@@ -40,9 +40,10 @@ lownames = [element.lower() for element in upnames]
 
 simulated_database = {'Banana': 'foodvalues', 'apple' : 'foodvalues', 'pizza' : 'foodValues'}
 
-test_url = 'http://lebensmittel-warenkunde.de/assets/images/bananen.jpg'
+#test_url = 'http://lebensmittel-warenkunde.de/assets/images/bananen.jpg'
 #test_url = 'http://images.eatsmarter.de/sites/default/files/styles/576x432/public/images/cholesterinsenker-341x256.jpg'
 #test_url = "http://www.cicis.com/media/1243/pizza_adven_zestypepperoni.png"
+test_url = "https://www.quia.com/files/quia/users/carladefaveri/Pausenbrot/Birne"
 
 
 visual_recognition = VisualRecognitionV3('2016-05-20', api_key='156f02f7a2afd0e4c1c50197db1f66a6e1fd6229')
@@ -101,7 +102,3 @@ def searcher(tab, x):
             
 
 searcher(table, search)
-
-
-
-print("hello world")
