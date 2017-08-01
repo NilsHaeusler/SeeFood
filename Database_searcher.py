@@ -40,8 +40,8 @@ lownames = [element.lower() for element in upnames]
 
 simulated_database = {'Banana': 'foodvalues', 'apple' : 'foodvalues', 'pizza' : 'foodValues'}
 
-#test_url = 'http://lebensmittel-warenkunde.de/assets/images/bananen.jpg'
-test_url = 'http://images.eatsmarter.de/sites/default/files/styles/576x432/public/images/cholesterinsenker-341x256.jpg'
+test_url = 'http://lebensmittel-warenkunde.de/assets/images/bananen.jpg'
+#test_url = 'http://images.eatsmarter.de/sites/default/files/styles/576x432/public/images/cholesterinsenker-341x256.jpg'
 #test_url = "http://www.cicis.com/media/1243/pizza_adven_zestypepperoni.png"
 #test_url = "https://www.quia.com/files/quia/users/carladefaveri/Pausenbrot/Birne"
 #test_url = "https://www.kochschule.de/sites/default/files/images/kochwissen/457/grapefruit.jpg"
